@@ -13,6 +13,7 @@
   */
 
 class Pool {
+	
 	constructor(createCall, initCall) {
 		this.createCall = createCall;
 		this.initCall = initCall;
