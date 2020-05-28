@@ -14,4 +14,3 @@ jobs:
       - uses: rymndhng/release-on-push-action@master
         with:
           bump_version_scheme: patch
-      - uses: Roang-zero1/github-create-release-action@master
