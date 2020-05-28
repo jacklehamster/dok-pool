@@ -17,7 +17,7 @@ jobs:
 
   release-tag:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged && startsWith(github.head_ref, 'RC')
+    needs: release-on-push
     steps:
       - uses: actions/checkout@master
       - name: Tag and prepare release
