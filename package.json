@@ -7,7 +7,6 @@
     "test": "mocha src/index.test.js",
     "semantic-release": "semantic-release"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": {
     "type": "git",
     "url": "https://github.com/jacklehamster/dok-pool.git"
