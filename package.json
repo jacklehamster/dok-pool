@@ -1,12 +1,13 @@
 {
   "name": "dok-pool",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Resource pool for games.",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/index.test.js",
     "semantic-release": "semantic-release"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": {
     "type": "git",
     "url": "https://github.com/jacklehamster/dok-pool.git"
