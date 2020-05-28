@@ -39,17 +39,3 @@ jobs:
       - uses: rymndhng/release-on-push-action@master
         with:
           bump_version_scheme: patch
-
-  release:
-    needs: release-on-push
-    name: Release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create a release draft for a version tag
-        id: create-release-draft
-        uses: ecampidoglio/auto-release-draft@v1
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Print the URL of the release draft
-        if: steps.create-release-draft.outputs.release-url != ''
-        run: echo ${{ steps.create-release-draft.outputs.release-url }}
