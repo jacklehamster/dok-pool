@@ -45,6 +45,7 @@ jobs:
           scope: '@jacklehamster'
       - run: npm ci
       - run: |
+          run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PUBLISH_GITHUB_TOKEN }}" >> ~/.npmrc
           npm config set scope "@jacklehamster"
           npm publish
         env:
