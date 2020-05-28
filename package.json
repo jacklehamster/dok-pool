@@ -1,6 +1,6 @@
 {
   "name": "dok-pool",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "Resource pool for games.",
   "main": "src/index.js",
   "scripts": {
