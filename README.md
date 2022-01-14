@@ -1,6 +1,7 @@
 # dok-pool
 Resource pool for games.
 
+[![Create Release](https://github.com/jacklehamster/dok-pool/actions/workflows/release.yml/badge.svg)](https://github.com/jacklehamster/dok-pool/actions/workflows/release.yml)
 ![Node.js Package](https://github.com/jacklehamster/dok-pool/workflows/Node.js%20Package/badge.svg)
 
 ## Overview
