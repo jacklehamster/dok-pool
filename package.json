@@ -1,6 +1,6 @@
 {
   "name": "dok-pool",
-  "version": "1.0.64",
+  "version": "1.0.69",
   "description": "Resource pool for games.",
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.2.0",
-    "semantic-release": "^17.0.8"
+    "semantic-release": "^19.0.3"
   }
 }
