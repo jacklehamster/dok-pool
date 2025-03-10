@@ -2,10 +2,15 @@
   "name": "dok-pool",
   "version": "1.0.74",
   "description": "Resource pool for games.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc src/index.ts --outDir dist",
     "test": "mocha src/index.test.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "auto-publish": "npm explore @dobuki/auto-publish -- bun run auto-publish \"$(pwd)\""
   },
   "repository": {
     "type": "git",
@@ -21,8 +26,9 @@
   },
   "homepage": "https://github.com/jacklehamster/dok-pool#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^10.2.0",
-    "semantic-release": "^21.0.1"
+    "@dobuki/auto-publish": "^1.0.22",
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "semantic-release": "^24.2.3"
   }
 }
