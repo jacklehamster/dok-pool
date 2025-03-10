@@ -11,7 +11,7 @@
  *	  class Pool
  */
 
-class Pool<T> {
+export default class Pool<T> {
   readonly pool: T[] = [];
   readonly recycler: T[] = [];
   index: number = 0;
@@ -56,7 +56,3 @@ class Pool<T> {
     this.recycler.length = 0;
   }
 }
-
-export default {
-  Pool,
-};
