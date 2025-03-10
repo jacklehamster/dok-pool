@@ -7,10 +7,8 @@
     "dist"
   ],
   "scripts": {
-    "test": "mocha src/index.test.js",
+    "test": "bun test",
     "build": "tsc src/index.ts --outDir dist",
-    "test": "mocha src/index.test.js",
-    "semantic-release": "semantic-release",
     "auto-publish": "npm explore @dobuki/auto-publish -- bun run auto-publish \"$(pwd)\""
   },
   "repository": {
@@ -28,8 +26,7 @@
   "homepage": "https://github.com/jacklehamster/dok-pool#readme",
   "devDependencies": {
     "@dobuki/auto-publish": "^1.0.22",
-    "chai": "^5.2.0",
-    "mocha": "^11.1.0",
-    "semantic-release": "^24.2.3"
+    "@types/chai": "^5.2.0",
+    "chai": "^5.2.0"
   }
 }

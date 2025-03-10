@@ -1,4 +1,4 @@
-const expect = require("chai").expect;
+import { expect } from "chai";
 import Pool from "./index";
 
 describe("Pool", function () {
